@@ -6,11 +6,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/hello', function(req, res){
-    res.send("Hello World!");
+    res.send("Hello World! from method.");
  });
  
 app.get('/:id', function(req, res){
     res.send('The id you specified is ' + req.params.id);
  });
 
-app.listen(3000);
+app.listen(80);
